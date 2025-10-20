@@ -76,6 +76,7 @@ int main() {
 
     auto square = make_shared<Square>(4.0);
     shapes.push_back(square);
+    shapes.push_back(make_shared<Circle>(Color::Red));
 
     findFirstShapeMatchingPredicate(shapes, perimeterBiggerThan20, "perimeter bigger than 20");
     findFirstShapeMatchingPredicate(shapes, areaLessThan10, "area less than 10");

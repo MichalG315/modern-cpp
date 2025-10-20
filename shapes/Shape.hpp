@@ -1,11 +1,16 @@
 #pragma once
+#include <iostream>
 
 enum class Color : unsigned char {
     White,
     Red,
     Blue
 };
+
+std::ostream& operator<<(std::ostream& os, Color c);
+
 class Shape {
+protected:
     Color color = Color::White;
 
 public:

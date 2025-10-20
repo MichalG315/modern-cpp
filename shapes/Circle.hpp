@@ -4,9 +4,10 @@
 
 class Circle final : public Shape {
 public:
+    using Shape::Shape;
     Circle() = delete;
     Circle(double r);
-    Circle(const Circle& other) = default;
+    Circle(const Circle& other);
 
     double getArea() const override;
     double getPerimeter() const override;

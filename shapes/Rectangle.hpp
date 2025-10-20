@@ -6,7 +6,7 @@ class Rectangle : public Shape {
 public:
     Rectangle() = delete;
     Rectangle(double x, double y);
-    Rectangle(const Rectangle& other) = default;
+    Rectangle(const Rectangle& other);
 
     double getArea() const override;
     double getPerimeter() const override;

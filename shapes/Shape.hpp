@@ -9,6 +9,9 @@ class Shape {
     Color color = Color::White;
 
 public:
+    Shape() {}
+    Shape(Color c) : color(c) {}
+    Shape(Shape const& sh) : color(sh.color) {}
     virtual ~Shape() {}
 
     virtual double getArea() const = 0;
